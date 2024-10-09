@@ -21,7 +21,7 @@ const Hero = () => {
         <a className='whatsapp-btn' href='https://wa.me/message/3P6PG2A2X6SSO1' target='blank'><IoLogoWhatsapp />Contato</a>
       </div>
       <div className="image-container">
-        <img src={aeroporto} alt="Advogado especializado em extravio de bagagem, perda de bagagem, voo cancelado, atraso de voo, cancelamento de voo e overbooking." />
+        <img src={aeroporto} loading='lazy' alt="Advogado especializado em extravio de bagagem, perda de bagagem, voo cancelado, atraso de voo, cancelamento de voo e overbooking." />
       </div>
     </div>
   );
