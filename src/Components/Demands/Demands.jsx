@@ -15,19 +15,19 @@ const Demands = () => {
       </Helmet>
 
       <div className="demands-box">
-        <h2><FaRegClock/> Atraso de voo</h2>
+        <h2><FaRegClock alt='Atraso de Voo'/> Atraso de voo</h2>
         <p>Os atrasos de voo ocorrem quando a decolagem ou pouso é postergado além do horário previsto, causando perda de conexões e compromissos importantes.</p>
       </div>
       <div className="demands-box">
-        <h2><MdNoLuggage/> Extravio de Bagagem</h2>
+        <h2><MdNoLuggage alt='Extravio de Bagagem'/> Extravio de Bagagem</h2>
         <p>O extravio de bagagem ocorre quando suas malas não chegam ao destino junto com você. A companhia aérea é responsável por localizar e devolver sua bagagem.</p>
       </div>
       <div className="demands-box">
-        <h2><FaRegCalendarTimes/> Voo Cancelado</h2>
+        <h2><FaRegCalendarTimes alt='Voo Cancelado'/> Voo Cancelado</h2>
         <p>O cancelamento de voo ocorre quando uma companhia aérea decide não realizar a viagem programada, causando grandes transtornos aos passageiros.</p>
       </div>
       <div className="demands-box">
-        <h2><MdAirplanemodeInactive/> Overbooking</h2>
+        <h2><MdAirplanemodeInactive alt='Overbooking'/> Overbooking</h2>
         <p>O overbooking acontece quando uma companhia aérea vende mais passagens do que a capacidade da aeronave, resultando em passageiros impedidos de embarcar.</p>
       </div>
     </div>

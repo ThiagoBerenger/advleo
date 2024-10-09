@@ -17,7 +17,7 @@ const Home = () => {
       {/* SEO */}
       <Helmet>
         <link rel="canonical" href="https://www.advleo.com.br/" />
-        <meta name="description" content="Advogado especializado em direito aéreo. Auxiliamos passageiros com problemas de atraso de voo, extravio de bagagem, cancelamento de voo e overbooking a reivindicar seus direitos e obter indenizações." />
+        <meta name="description" content="Advogado especializado em extravio de bagagem, cancelamento de voo, atrasos de voo e overbooking. Oferecemos assistência jurídica completa para passageiros aéreos." />
         <meta name="keywords" content="Advogado atraso de voo, Extravio de bagagem, Cancelamento de voo, Overbooking, Indenização por atraso de voo, Direitos do passageiro, Assistência jurídica voo, Reembolso passagem aérea, Ação contra companhia aérea, Problemas voo internacional" />
         <meta name="author" content="Leonardo Borges - Advogado" />
         <title>Dr. Leonardo Borges</title>

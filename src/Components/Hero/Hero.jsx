@@ -1,7 +1,10 @@
 import React from 'react';
 import './Hero.modules.css';
-import video from '../../assets/videos/airplane.mp4';
+
 import { IoLogoWhatsapp } from "react-icons/io";
+
+import aeroporto from '../../assets/images/aeroporto.jpg'
+
 import { Helmet } from 'react-helmet'; // Importando o Helmet
 
 const Hero = () => {
@@ -14,11 +17,11 @@ const Hero = () => {
 
       <div className="hero-title_container">
         <h1>Advogado do Consumidor</h1>
-        <p>Extravio de bagagem - Atraso de Voo - Voo Cancelado - Overbooking</p>
+        <h2>Advogado Especialista em Extravio de Bagagem, Cancelamento e Atraso de Voos</h2>
         <a className='whatsapp-btn' href='https://wa.me/message/3P6PG2A2X6SSO1' target='blank'><IoLogoWhatsapp />Contato</a>
       </div>
-      <div className="video-container">
-        <video src={video} autoPlay loop muted></video>
+      <div className="image-container">
+        <img src={aeroporto} alt="Advogado especializado em extravio de bagagem, perda de bagagem, voo cancelado, atraso de voo, cancelamento de voo e overbooking." />
       </div>
     </div>
   );

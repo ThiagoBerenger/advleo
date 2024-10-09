@@ -7,7 +7,7 @@ import foto from '../../assets/images/leo.png'
 const About = () => {
   return (
     <div className='about-container'>
-        <img src={foto} alt="Doutor Leonardo Borges" loading='lazy'/>
+        <img src={foto} alt="Leonardo Borges, Advogado especializado em direito do consumidor. Voo cancelado, atraso de voo, overbooking, extravio de bagagem, perda de bagagem." loading='lazy'/>
         <div className="about-content">
             <h2>Leonardo Borges - Advogado.</h2>
             <p>Se você enfrenta problemas com passagens aéreas, cancelamentos de voos, overbooking, atraso de voos ou qualquer outra situação que tenha prejudicado sua viagem, nós estamos aqui para ajudar. No escritório Leonardo Borges Advocacia, somos especializados em Direito do Consumidor e oferecemos assessoria jurídica completa para garantir que seus direitos como passageiro sejam respeitados. </p>
