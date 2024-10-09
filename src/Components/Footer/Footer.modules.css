@@ -1,0 +1,40 @@
+.footer-container {
+    height: 30vh;
+    padding: 4rem 0;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.contact-footer {
+    display: flex;
+    flex-direction: column;    
+}
+
+.contact-footer h2 {
+    font-size: 32px;
+}
+
+
+.details-footer h4{
+    font-size: 24px;
+}
+
+@media screen and (max-width: 900px) {
+
+    .footer-container {
+        height: auto;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .contact-footer h2 {
+        font-size: 26px;
+        margin-bottom: 1rem;
+    }
+    
+    
+    .details-footer h4{
+        font-size: 18px;
+    }
+}

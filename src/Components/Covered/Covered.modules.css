@@ -1,0 +1,17 @@
+.covered-container {
+    padding: 6rem 0;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+    background-image: linear-gradient(var(--color-primary) 50%, rgb(126, 235, 38));
+}
+
+@media screen and (max-width: 900px) {
+    .covered-container {
+        text-align: center;
+        padding: 2rem;
+        font-size: 22px;
+    }
+}
