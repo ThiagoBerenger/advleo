@@ -19,6 +19,10 @@ const Header = () => {
         setIsOpen(!isOpen);
     };
 
+    const handleMenuClick = () => {
+        setIsOpen(false); // Fecha o menu ao clicar
+    };
+
     useEffect(() => {
         if (isOpen) {
             // Desativa o scroll
@@ -50,14 +54,13 @@ const Header = () => {
                 {/* Menu items */}
                 <nav className={`menu ${isOpen ? 'menu-open' : ''}`}>
                     <ul>
-                    <li><Link to="/"><FaHome /> Home</Link></li>
-                        <li><Link to="/extravio-de-bagagem"><MdNoLuggage /> Extravio de Bagagem</Link></li>
-                        <li><Link to="/atraso-de-voo"><FaRegClock /> Atraso de Voo</Link></li>
-                        <li><Link to="/cancelamento-de-voo"><FaRegCalendarTimes /> Cancelamento de Voo</Link></li>
-                        <li><Link to="/overbooking"><MdAirplanemodeInactive /> Overbooking</Link></li>
-                        <li><Link to="/contato"><MdEmail /> Contato</Link></li>
-                        
-                        <li><a href="https://www.instagram.com/adv.leonardoborges/profilecard/?igsh=NnRwaGcxeGkxOWRr" target='blank'> <FaInstagram /></a></li>
+                        <li><Link to="/" onClick={handleMenuClick}><FaHome /> Home</Link></li>
+                        <li><Link to="/extravio-de-bagagem" onClick={handleMenuClick}><MdNoLuggage /> Extravio de Bagagem</Link></li>
+                        <li><Link to="/atraso-de-voo" onClick={handleMenuClick}><FaRegClock /> Atraso de Voo</Link></li>
+                        <li><Link to="/cancelamento-de-voo" onClick={handleMenuClick}><FaRegCalendarTimes /> Cancelamento de Voo</Link></li>
+                        <li><Link to="/overbooking" onClick={handleMenuClick}><MdAirplanemodeInactive /> Overbooking</Link></li>
+                        <li><Link to="/contato" onClick={handleMenuClick}><MdEmail /> Contato</Link></li>
+                        <li><a href="https://www.instagram.com/adv.leonardoborges/profilecard/?igsh=NnRwaGcxeGkxOWRr" target='blank' onClick={handleMenuClick}> <FaInstagram /></a></li>
                     </ul>
                 </nav>
             </div>
