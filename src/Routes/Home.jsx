@@ -34,6 +34,8 @@ const Home = () => {
         <meta name="twitter:title" content="Dr. Leonardo Borges - Advogado Especializado em Direito Aéreo" />
         <meta name="twitter:description" content="Auxiliamos passageiros com problemas de atraso de voo, extravio de bagagem, cancelamento de voo e overbooking." />
         <meta name="twitter:image" content={perfilMeta} /> {/* Caminho da imagem */}
+
+        <meta name="google-site-verification" content="jxmXBEJPhY0zDuzBILOmN9A4i_kINLvMJjB-kQr1_PA" />
       </Helmet>
 
 {/* componentes */}
