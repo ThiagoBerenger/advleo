@@ -74,7 +74,7 @@ const CancelamentoComponent = () => {
                 </div>
               </div>
     
-              <h4>Se você passou por transtornos devido a um atraso de voo, entre em contato para uma consulta jurídica e reivindique seus direitos.</h4>
+              <h4>Se você passou por transtornos devido a um cancelamento de voo, entre em contato para uma consulta jurídica e reivindique seus direitos.</h4>
           </div>
           <CallToAction/>
         </div>
