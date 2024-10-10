@@ -12,6 +12,7 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import Home from './Routes/Home.jsx'
 import Contact from './Routes/Contact.jsx'
 import Extravio from './Routes/Extravio.jsx'
+import Atraso from './Routes/Atraso.jsx'
 
 
 const router = createBrowserRouter([
@@ -26,6 +27,10 @@ const router = createBrowserRouter([
       {
         path: '/extravio-de-bagagem',
         element: <Extravio />
+      },
+      {
+        path: '/atraso-de-voo',
+        element: <Atraso />
       },
       {
         path: 'contato',
