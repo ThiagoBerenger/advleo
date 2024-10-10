@@ -11,6 +11,7 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 // importando páginas
 import Home from './Routes/Home.jsx'
 import Contact from './Routes/Contact.jsx'
+import Extravio from './Routes/Extravio.jsx'
 
 
 const router = createBrowserRouter([
@@ -21,6 +22,10 @@ const router = createBrowserRouter([
       {
         path: '/',
         element: <Home />
+      },
+      {
+        path: '/extravio-de-bagagem',
+        element: <Extravio />
       },
       {
         path: 'contato',

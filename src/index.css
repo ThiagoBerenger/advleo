@@ -30,6 +30,10 @@ p {
   line-height: 28px;
 }
 
+.mark_2 {
+  font-weight: 500;
+}
+
 /* estilização do scroll-bar */
 
 ::-webkit-scrollbar {
