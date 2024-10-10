@@ -1,23 +1,11 @@
-import React, { useRef } from 'react'
+import React from 'react'
 import AtrasoComponent from '../Components/AtrasoComponent/AtrasoComponent'
 
 import ArrowUp from '../Components/ArrowUp/ArrowUp'
 
 import { Helmet } from 'react-helmet'
 
-const Atraso = () => {
-
-    const topRef = useRef(null);
-
-    const scrollToTop = () => {
-        if (topRef.current) {
-            topRef.current.scrollIntoView({
-                top: 0,
-                behavior: 'smoth',
-            })
-        }
-    }
-    
+const Atraso = () => {    
   return (
     <div>
         <Helmet>
@@ -30,7 +18,7 @@ const Atraso = () => {
               content="Especialista em indenizações por atrasos de voo. Descubra seus direitos como passageiro e como buscar reparação financeira por transtornos causados por atrasos de voos."
             />
         </Helmet>
-        <ArrowUp onClick={scrollToTop} />
+        <ArrowUp />
         <AtrasoComponent />
     </div>
   )

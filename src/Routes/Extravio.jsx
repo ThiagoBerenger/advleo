@@ -14,7 +14,7 @@ const Extravio = () => {
             name="description"
             content="Advogado especializado em extravio de bagagem. Saiba quais são seus direitos e como buscar indenização por bagagens perdidas ou danificadas. Consultoria jurídica completa para passageiros aéreos."
           />
-      </Helmet>
+        </Helmet>
         <ExtravioComponent/>
         <ArrowUp/>
     </>

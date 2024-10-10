@@ -16,7 +16,7 @@ const Overbooking = () => {
               name="description"
               content="Saiba como proceder em casos de overbooking. Advogado especializado em direitos de passageiros, com atuação em compensações financeiras por overbooking."
             />
-      </Helmet>
+        </Helmet>
         <OverbookingComponent/>
         <ArrowUp/>
     </div>

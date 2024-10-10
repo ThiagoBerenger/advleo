@@ -12,8 +12,8 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import Home from './Routes/Home.jsx'
 import Extravio from './Routes/Extravio.jsx'
 import Atraso from './Routes/Atraso.jsx'
-import CancelamentoComponent from './Components/CancelamentoComponent/CancelamentoComponent.jsx'
 import Overbooking from './Routes/Overbooking.jsx'
+import Cancelamento from './Routes/Cancelamento.jsx'
 
 
 const router = createBrowserRouter([
@@ -35,7 +35,7 @@ const router = createBrowserRouter([
       },
       {
         path: '/cancelamento-de-voo',
-        element: <CancelamentoComponent />
+        element: <Cancelamento />
       },
       {
         path: '/overbooking',

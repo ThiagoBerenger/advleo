@@ -4,6 +4,7 @@ import CancelamentoComponent from '../Components/CancelamentoComponent/Cancelame
 import { Helmet } from 'react-helmet'
 import ArrowUp from '../Components/ArrowUp/ArrowUp'
 
+
 const Cancelamento = () => {
   return (
     <div>
