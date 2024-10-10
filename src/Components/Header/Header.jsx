@@ -40,9 +40,9 @@ const Header = () => {
     return (
         <div className='header-container'>
             <div className="logo-container">
-                <Link to='/'><img src={Logo} alt="logomarca Leonardo Borges" /></Link>
+                <Link to='/'><img src={Logo} alt="logomarca Leonardo Borges" width='120px' height={'auto'}/></Link>
                 <Link to='/'>
-                    <h2>Dr. Leonardo Borges</h2>
+                    <p>Dr. Leonardo Borges</p>
                 </Link>
             </div>
 

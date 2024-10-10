@@ -15,7 +15,7 @@ const Cancelamento = () => {
             </title>
             <meta
               name="description"
-              content="Saiba o que fazer em caso de cancelamento de voo. Conheça seus direitos e como buscar indenização por transtornos. Consultoria jurídica especializada em cancelamentos de voos."
+              content="Saiba o que fazer em caso de cancelamento de voo. Conheça seus direitos e como buscar indenização por transtornos."
             />
         </Helmet>
         <CancelamentoComponent/>
