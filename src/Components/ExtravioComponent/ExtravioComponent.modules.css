@@ -83,6 +83,141 @@
     color: var(--color-primary);
 }
 
+.extravio-help {
+    background-color: var(--color-light);
+    padding: 6rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
 
+.extravio-help_title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.extravio-help_title h2 {
+    font-size: 42px;
+}
+
+.extravio-help_title h3 {
+    width: 60%;
+    font-size: 20px;
+    margin: 1rem;
+}
+
+.extravio-box_container {
+    margin: 2rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.extravio-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 2rem;
+    text-align: center;
+    height: 300px;
+    background-color: #000;
+    border-radius: 1rem;
+}
+
+.extravio-box p {
+    width: 60%;
+    font-size: 20px;
+    color: white;
+}
+
+.extravio-box svg {
+    color: var(--color-primary);
+    font-size: 42px;
+    margin-bottom: 1rem;
+}
+
+.extravio-help h4 {
+    margin-top: 1rem;
+    font-size: 20px;
+    width: 50%;
+    text-align: center;
+}
   
+
+@media screen and (max-width: 900px) {
+    
+    .extravio-title_container img {
+        height: 60vh;
+    }    
+    
+    .extravio-title h1 {
+        font-size: 42px;
+        color: white;
+    }
+    
+    .extravio-title h2 {
+        margin: 1rem auto;
+        font-size: 22px;
+        width: 90%;
+    }
+    
+    .extravio-content_container {
+        padding: 4rem 1rem;
+        width: 90%;
+        text-align: center;
+    }
+    
+    .extravio-question_container {
+        padding: 4rem 0rem;
+        background-color: #000;
+    }
+    
+    .extravio-question_container h3 {
+        width: 100%;
+    }
+    
+    .extravio-question_container ul {
+        width: 100%;
+    }
+    
+    .extravio-question_container ul li {
+        width: 90%;
+    }
+    
+    .extravio-help {
+        padding: 4rem 0;
+    }
+    
+    .extravio-help_title h2 {
+        font-size: 42px;
+    }
+    
+    .extravio-help_title h3 {
+        width: 90%;
+        margin: 1rem auto;
+    }
+    
+    .extravio-box_container {
+        margin: 1rem 2rem;
+        flex-direction: column;
+    }
+    
+    .extravio-box {
+        height: auto;
+    }
+    
+    .extravio-box p {
+        width: 80%;
+    }
+    
+    .extravio-help h4 {
+        width: 90%;
+    }
+}
   
