@@ -16,17 +16,7 @@ import overbooking from '../../assets/images/overbooking.jpg'
 
 const OverbookingComponent = () => {
     return (
-        <div className='overbooking-container'>
-          <Helmet>
-            <title>
-            Overbooking: Direitos dos Passageiros e Como Buscar Compensação
-            </title>
-            <meta
-              name="description"
-              content="Saiba como proceder em casos de overbooking. Advogado especializado em direitos de passageiros, com atuação em compensações financeiras por overbooking."
-            />
-          </Helmet>
-    
+        <div className='overbooking-container'>    
           <div className="overbooking-title_container">
               <div className="overbooking-title">
                   <h1>overbooking de Voo</h1>

@@ -3,10 +3,6 @@ import './CancelamentoComponent.modules.css'
 
 import CallToAction from '../CallToAction/CallToAction';
 
-// SEO
-import { Helmet } from 'react-helmet';
-
-
 // importando icones
 import { FaCheck, FaFileContract, FaRegHandshake } from 'react-icons/fa';
 import { AiOutlineDollarCircle } from 'react-icons/ai';
@@ -18,17 +14,7 @@ import cancelamento from '../../assets/images/cancelamento.jpg'
 
 const CancelamentoComponent = () => {
     return (
-        <div className='cancelamento-container'>
-          <Helmet>
-            <title>
-            Cancelamento de Voo: Direitos e Indenizações para Passageiros
-            </title>
-            <meta
-              name="description"
-              content="Saiba o que fazer em caso de cancelamento de voo. Conheça seus direitos e como buscar indenização por transtornos. Consultoria jurídica especializada em cancelamentos de voos."
-            />
-          </Helmet>
-    
+        <div className='cancelamento-container'>    
           <div className="cancelamento-title_container">
               <div className="cancelamento-title">
                   <h1>Cancelamento de Voo</h1>

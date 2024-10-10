@@ -3,9 +3,6 @@ import './AtrasoComponent.modules.css'
 
 import CallToAction from '../CallToAction/CallToAction';
 
-// SEO
-import { Helmet } from 'react-helmet';
-
 // icones
 import { FaCheck } from 'react-icons/fa';
 import { FaInfoCircle } from 'react-icons/fa';
@@ -19,17 +16,7 @@ import atraso from '../../assets/images/atraso.jpg'
 
 const AtrasoComponent = () => {
     return (
-        <div className='atraso-container'>
-          <Helmet>
-            <title>
-             Atraso de Voo: Indenizações e Soluções Legais
-            </title>
-            <meta
-              name="description"
-              content="Especialista em indenizações por atrasos de voo. Descubra seus direitos como passageiro e como buscar reparação financeira por transtornos causados por atrasos de voos."
-            />
-          </Helmet>
-    
+        <div className='atraso-container'>    
           <div className="atraso-title_container">
               <div className="atraso-title">
                   <h1>Atraso de Voo</h1>

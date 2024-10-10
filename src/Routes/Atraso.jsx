@@ -8,8 +8,14 @@ const Atraso = () => {
     <div>
         <Helmet>
             <link rel="canonical" href="https://www.advleo.com.br/atraso-de-voo"/>
+            <title>
+             Atraso de Voo: Indenizações e Soluções Legais
+            </title>
+            <meta
+              name="description"
+              content="Especialista em indenizações por atrasos de voo. Descubra seus direitos como passageiro e como buscar reparação financeira por transtornos causados por atrasos de voos."
+            />
         </Helmet>
-
         <AtrasoComponent />
     </div>
   )
