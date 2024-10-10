@@ -13,6 +13,7 @@ import Home from './Routes/Home.jsx'
 import Contact from './Routes/Contact.jsx'
 import Extravio from './Routes/Extravio.jsx'
 import Atraso from './Routes/Atraso.jsx'
+import CancelamentoComponent from './Components/CancelamentoComponent/CancelamentoComponent.jsx'
 
 
 const router = createBrowserRouter([
@@ -31,6 +32,10 @@ const router = createBrowserRouter([
       {
         path: '/atraso-de-voo',
         element: <Atraso />
+      },
+      {
+        path: '/cancelamento-de-voo',
+        element: <CancelamentoComponent />
       },
       {
         path: 'contato',

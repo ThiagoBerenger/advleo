@@ -55,7 +55,7 @@ const AtrasoComponent = () => {
           <div className="atraso-help">
               <div className="atraso-help_title">
                   <h2>Como o advogado pode ajudar?</h2>
-                  <h3>Muitas companhias aéreas oferecem resistência em indenizar corretamente o passageiro. Como advogado especializado em *direitos dos passageiros aéreos*, posso ajudar a:</h3>
+                  <h3>Muitas companhias aéreas oferecem resistência em indenizar corretamente o passageiro. Como advogado especializado em direitos dos passageiros aéreos, posso ajudar a:</h3>
               </div>
     
               <div className="atraso-box_container">
