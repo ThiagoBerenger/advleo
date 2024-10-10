@@ -40,8 +40,10 @@ const Header = () => {
     return (
         <div className='header-container'>
             <div className="logo-container">
-                <img src={Logo} alt="logomarca Leonardo Borges" />
-                <h2>Dr. Leonardo Borges</h2>
+                <Link to='/'><img src={Logo} alt="logomarca Leonardo Borges" /></Link>
+                <Link to='/'>
+                    <h2>Dr. Leonardo Borges</h2>
+                </Link>
             </div>
 
             <div className="header-menu">
