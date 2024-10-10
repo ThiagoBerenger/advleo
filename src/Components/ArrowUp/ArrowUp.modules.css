@@ -1,0 +1,30 @@
+.arrow-box {
+    position: fixed;
+    bottom: 4rem;
+    right: 2rem;
+    background-color: var(--color-dark);
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+.arrow {
+    font-size: 32px;
+    color: #fff;
+}
+
+.arrow-box:hover {
+    opacity: .9;
+}
+
+@media screen and (max-width: 900px) {
+    .arrow-box {
+        position: fixed;
+        bottom: 2rem;
+        right: 1rem;
+    }
+}

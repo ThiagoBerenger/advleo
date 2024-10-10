@@ -2,6 +2,7 @@ import React from 'react'
 import CancelamentoComponent from '../Components/CancelamentoComponent/CancelamentoComponent'
 
 import { Helmet } from 'react-helmet'
+import ArrowUp from '../Components/ArrowUp/ArrowUp'
 
 const Cancelamento = () => {
   return (
@@ -17,6 +18,7 @@ const Cancelamento = () => {
             />
         </Helmet>
         <CancelamentoComponent/>
+        <ArrowUp/>
     </div>
   )
 }

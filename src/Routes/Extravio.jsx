@@ -2,6 +2,7 @@ import React from 'react'
 import ExtravioComponent from '../Components/ExtravioComponent/ExtravioComponent'
 
 import { Helmet } from 'react-helmet'
+import ArrowUp from '../Components/ArrowUp/ArrowUp'
 
 const Extravio = () => {
   return (
@@ -15,6 +16,7 @@ const Extravio = () => {
           />
       </Helmet>
         <ExtravioComponent/>
+        <ArrowUp/>
     </>
   )
 }

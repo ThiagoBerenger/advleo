@@ -10,6 +10,7 @@ import Customer from '../Components/Customer/Customer'
 import Covered from '../Components/Covered/Covered'
 
 import perfilMeta from '../assets/images/perfilmeta.png'
+import ArrowUp from '../Components/ArrowUp/ArrowUp';
 
 const Home = () => {
   return (
@@ -46,6 +47,7 @@ const Home = () => {
         <Problem />
         <Customer />
         <Covered />
+        <ArrowUp/>
     </>
   )
 }

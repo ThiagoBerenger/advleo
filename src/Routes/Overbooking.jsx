@@ -2,6 +2,7 @@ import React from 'react'
 import OverbookingComponent from '../Components/OverbookingComponent/OverbookingComponent'
 
 import { Helmet } from 'react-helmet'
+import ArrowUp from '../Components/ArrowUp/ArrowUp'
 
 const Overbooking = () => {
   return (
@@ -17,6 +18,7 @@ const Overbooking = () => {
             />
       </Helmet>
         <OverbookingComponent/>
+        <ArrowUp/>
     </div>
   )
 }
