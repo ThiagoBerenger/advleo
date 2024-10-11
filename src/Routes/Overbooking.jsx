@@ -8,7 +8,7 @@ const Overbooking = () => {
   return (
     <div>
         <Helmet>
-            <link rel="canonical" href="https://www.advleo.com.br/overbooking"/>
+            <link rel="canonical" href="https://advleo.com.br/overbooking"/>
             <title>
             Overbooking: Direitos dos Passageiros e Como Buscar Compensação
             </title>

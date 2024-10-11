@@ -9,7 +9,7 @@ const Cancelamento = () => {
   return (
     <div>
          <Helmet>
-            <link rel="canonical" href="https://www.advleo.com.br/cancelamento-de-voo"/>
+            <link rel="canonical" href="https://advleo.com.br/cancelamento-de-voo"/>
             <title>
             Cancelamento de Voo: Direitos e Indenizações para Passageiros
             </title>

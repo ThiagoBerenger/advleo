@@ -8,7 +8,7 @@ const Extravio = () => {
   return (
     <>
      <Helmet>
-            <link rel="canonical" href="https://www.advleo.com.br/extravio-de-bagagem"/>
+            <link rel="canonical" href="https://advleo.com.br/extravio-de-bagagem"/>
             <title>Extravio de Bagagem: Direitos do Passageiro e Assistência Jurídica Especializada</title>
           <meta
             name="description"

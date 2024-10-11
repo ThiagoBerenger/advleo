@@ -27,7 +27,7 @@ const Home = () => {
         <meta property="og:title" content="Dr. Leonardo Borges - Advogado Especializado em Direito Aéreo" />
         <meta property="og:description" content="Auxiliamos passageiros com problemas de atraso de voo, extravio de bagagem, cancelamento de voo e overbooking." />
         <meta property="og:image" content={perfilMeta} /> {/* Caminho da imagem */}
-        <meta property="og:url" content="https://www.advleo.com.br/" />
+        <meta property="og:url" content="https://advleo.com.br/" />
         <meta property="og:type" content="website" />
 
         {/* Meta tags para Twitter Cards */}

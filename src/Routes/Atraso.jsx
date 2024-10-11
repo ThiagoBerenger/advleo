@@ -9,7 +9,7 @@ const Atraso = () => {
   return (
     <div>
         <Helmet>
-            <link rel="canonical" href="https://www.advleo.com.br/atraso-de-voo"/>
+            <link rel="canonical" href="https://advleo.com.br/atraso-de-voo"/>
             <title>
              Atraso de Voo: Indenizações e Soluções Legais
             </title>
