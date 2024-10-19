@@ -5,12 +5,13 @@ import { getAuth } from 'firebase/auth';
 
 // Configuração do Firebase
 const firebaseConfig = {
-  apiKey: "SUA_API_KEY",
-  authDomain: "SEU_AUTH_DOMAIN",
-  projectId: "SEU_PROJECT_ID",
-  storageBucket: "SEU_STORAGE_BUCKET",
-  messagingSenderId: "SEU_MESSAGING_SENDER_ID",
-  appId: "SEU_APP_ID",
+  apiKey: "AIzaSyCBRHxWepp00vAByBnrcdULNsNOMRbYmJM",
+  authDomain: "blog-adv-leo.firebaseapp.com",
+  projectId: "blog-adv-leo",
+  storageBucket: "blog-adv-leo.appspot.com",
+  messagingSenderId: "1003218231348",
+  appId: "1:1003218231348:web:41e3fdc7e237f8aaac6a61",
+  measurementId: "G-MVSDTHZPVK"
 };
 
 // Inicializa o Firebase
