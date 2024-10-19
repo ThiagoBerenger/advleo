@@ -1,0 +1,37 @@
+.blog-thumbs-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    padding: 2rem;
+  }
+  
+  .blog-thumb {
+    width: 300px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .blog-thumb:hover {
+    transform: scale(1.05);
+  }
+  
+  .blog-thumb-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .blog-thumb-text {
+    padding: 10px;
+    background-color: #fff;
+  }
+  
+  .blog-thumb-text h2 {
+    margin: 0;
+    font-size: 18px;
+    color: #333;
+    text-align: center;
+  }
+  

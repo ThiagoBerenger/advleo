@@ -14,6 +14,8 @@ import Extravio from './Routes/Extravio.jsx'
 import Atraso from './Routes/Atraso.jsx'
 import Overbooking from './Routes/Overbooking.jsx'
 import Cancelamento from './Routes/Cancelamento.jsx'
+import Blog from './Routes/Blog.jsx'
+import BlogPostPage from './Routes/BlogPostPage.jsx'
 
 
 const router = createBrowserRouter([
@@ -40,6 +42,14 @@ const router = createBrowserRouter([
       {
         path: '/overbooking',
         element: <Overbooking />
+      },
+      {
+        path: '/blog',
+        element: <Blog />
+      },
+      {
+        path: '/blog/:id',
+        element: <BlogPostPage />
       },
     ]
   },

@@ -4,12 +4,9 @@ import './Header.modules.css';
 
 import Logo from '../../assets/images/logo.png';
 
-import { FaInstagram } from "react-icons/fa";
-import { FaHome } from "react-icons/fa";
-import { MdNoLuggage } from "react-icons/md";
-import { FaRegClock } from "react-icons/fa";
+import { MdNoLuggage } from "react-icons/md"
 import { MdAirplanemodeInactive } from "react-icons/md";
-import { FaRegCalendarTimes } from "react-icons/fa";
+import { FaRegCalendarTimes, FaPencilAlt, FaHome, FaInstagram, FaRegClock  } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 
 const Header = () => {
@@ -61,6 +58,7 @@ const Header = () => {
                         <li><Link to="/atraso-de-voo" onClick={handleMenuClick}><FaRegClock /> Atraso de Voo</Link></li>
                         <li><Link to="/cancelamento-de-voo" onClick={handleMenuClick}><FaRegCalendarTimes /> Cancelamento de Voo</Link></li>
                         <li><Link to="/overbooking" onClick={handleMenuClick}><MdAirplanemodeInactive /> Overbooking</Link></li>
+                        <li><Link to="/blog" onClick={handleMenuClick}><FaPencilAlt /> Blog</Link></li>
                         <li><Link to="https://wa.me/message/3P6PG2A2X6SSO1" onClick={handleMenuClick} target='blank'><MdEmail /> Contato</Link></li>
                         
                         <li><a href="https://www.instagram.com/adv.leonardoborges/profilecard/?igsh=NnRwaGcxeGkxOWRr" target='blank' onClick={handleMenuClick}> <FaInstagram /></a></li>
