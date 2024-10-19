@@ -39,7 +39,7 @@ export const fetchPostBySlug = async (slug) => {
   const post = querySnapshot.docs.map(doc => ({
     id: doc.id,
     ...doc.data(),
-  }))[0]; // Retorna o primeiro post que encontrar (caso haja mais de um)
+  }))[0]; // Retorna o primeiro post encontrado (caso haja mais de um)
 
   return post;
 };
