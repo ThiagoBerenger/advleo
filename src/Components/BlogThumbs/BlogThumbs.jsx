@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import './BlogThumbs.css'; // Estilos para o componente
+import './BlogThumbs.modules.css'; // Estilos para o componente
 
 const BlogThumbs = ({ posts }) => {
   return (
