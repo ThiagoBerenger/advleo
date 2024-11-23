@@ -11,7 +11,7 @@ const BlogPostPage = () => {
   useEffect(() => {
     client
       .getEntries({
-        content_type: 'blogPost', // Content Type ID
+        content_type: 'thiagoputo', // Content Type ID
         'fields.slug': slug, // Filtro pelo campo slug
       })
       .then((response) => {

@@ -2,6 +2,9 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 const BlogThumbs = ({ posts }) => {
+
+  console.log('Posts recebidos:', posts);
+
   if (!posts || posts.length === 0) {
     return <p>Nenhum post encontrado.</p>;
   }
@@ -26,4 +29,4 @@ const BlogThumbs = ({ posts }) => {
   );
 };
 
-export default BlogThumbs;
+export default BlogThumbs;

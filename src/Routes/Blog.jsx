@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
+import client from '../contentfulClient'; 
 import BlogThumbs from '../Components/BlogThumbs/BlogThumbs';
-import client from '../contentfulClient';
 
 const Blog = () => {
   const [posts, setPosts] = useState([]);
@@ -8,19 +8,25 @@ const Blog = () => {
 
   useEffect(() => {
     client
-      .getEntries({ content_type: 'blogPost' })
+      .getEntries({ content_type: 'thiagoputo' }) // Use o ID correto (blogPost)
       .then((response) => {
-        const formattedPosts = response.items.map((item) => ({
-          id: item.sys.id,
-          slug: item.fields.slug,
-          title: item.fields.title,
-          thumbnail: item.fields.thumbnail?.fields?.file?.url || '',
-        }));
-        setPosts(formattedPosts);
+        console.log('Resposta da API:', response);
+        if (response.items.length > 0) {
+          // Formatar os dados retornados
+          const formattedPosts = response.items.map((item) => ({
+            id: item.sys.id,
+            slug: item.fields.slug,
+            title: item.fields.title,
+            thumbnail: item.fields.thumbnail?.fields?.file?.url || '',
+          }));
+          setPosts(formattedPosts);
+        } else {
+          console.log('Nenhum post encontrado.');
+        }
         setLoading(false);
       })
       .catch((error) => {
-        console.error('Erro ao buscar posts:', error);
+        console.error('Erro ao buscar os posts:', error);
         setLoading(false);
       });
   }, []);
@@ -29,10 +35,14 @@ const Blog = () => {
     return <p>Carregando posts...</p>;
   }
 
+  if (posts.length === 0) {
+    return <p>Nenhum post encontrado.</p>;
+  }
+
   return (
     <div>
       <h1>Blog</h1>
-      <BlogThumbs posts={posts} />
+      <BlogThumbs posts={posts}/>
     </div>
   );
 };
