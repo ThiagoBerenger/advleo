@@ -1,5 +1,5 @@
 import { SitemapStream } from 'sitemap';
-   import { createWriteStream } from 'fs';
+import { createWriteStream } from 'fs';
 
    const links = [
      { url: '/', changefreq: 'daily', priority: 1.0 },
