@@ -1,42 +1,41 @@
-import React, { useState, useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
-import { fetchPostBySlug } from '../firebase'; // Importando a função correta
+import BlogPost from '../Components/BlogPost/BlogPost';
+import client from '../contentfulClient';
 
 const BlogPostPage = () => {
-  const { slug } = useParams(); // Pega o slug da URL
+  const { slug } = useParams(); // Obtém o slug da URL
   const [post, setPost] = useState(null);
   const [loading, setLoading] = useState(true);
-  const [error, setError] = useState(null);
 
   useEffect(() => {
-    const getPost = async () => {
-      try {
-        setLoading(true);
-        const fetchedPost = await fetchPostBySlug(slug);
-        if (fetchedPost) {
-          setPost(fetchedPost);
-        } else {
-          setError('Post não encontrado');
+    client
+      .getEntries({
+        content_type: 'blogPost', // Content Type ID
+        'fields.slug': slug, // Filtro pelo campo slug
+      })
+      .then((response) => {
+        if (response.items.length > 0) {
+          const item = response.items[0];
+          setPost({
+            title: item.fields.title,
+            body: item.fields.body,
+            thumbnail: item.fields.thumbnail?.fields?.file?.url || '',
+          });
         }
-      } catch (err) {
-        setError('Erro ao carregar o post');
-      } finally {
         setLoading(false);
-      }
-    };
-    getPost();
+      })
+      .catch((error) => {
+        console.error('Erro ao buscar o post:', error);
+        setLoading(false);
+      });
   }, [slug]);
 
-  if (loading) return <p>Carregando post...</p>;
-  if (error) return <p>{error}</p>;
-  if (!post) return null;
+  if (loading) {
+    return <p>Carregando post...</p>;
+  }
 
-  return (
-    <div className="blog-post">
-      <h1>{post.title}</h1>
-      <p>{post.content}</p>
-    </div>
-  );
+  return <BlogPost post={post} />;
 };
 
 export default BlogPostPage;

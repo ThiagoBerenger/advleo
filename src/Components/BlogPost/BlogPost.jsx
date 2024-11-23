@@ -1,21 +1,21 @@
-import React from 'react'
-import { useParams } from 'react-router-dom'
-import BlogPost from '../components/BlogPost'
-import postsData from '../data/postsData'
+import React from 'react';
 
-const BlogPostPage = () => {
-  const { id } = useParams(); // Pega o id da URL
-  const post = postsData.find(post => post.id === parseInt(id)); // Busca o post pelo id
-
+const BlogPost = ({ post }) => {
   if (!post) {
     return <p>Post não encontrado.</p>;
   }
 
   return (
-    <div className="blog-post-page">
-      <BlogPost post={post} />
+    <div>
+      <h1>{post.title}</h1>
+      <img
+        src={post.thumbnail}
+        alt={post.title}
+        style={{ maxWidth: '100%' }}
+      />
+      <div dangerouslySetInnerHTML={{ __html: post.body }} />
     </div>
   );
 };
 
-export default BlogPostPage;
+export default BlogPost;
