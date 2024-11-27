@@ -154,11 +154,12 @@
 @media screen and (max-width: 900px) {
     
     .cancelamento-title_container img {
-        height: 60vh;
+        height: 40vh;
     }    
     
     .cancelamento-title h1 {
         font-size: 42px;
+        padding: 0 .4rem;
         color: white;
     }
     

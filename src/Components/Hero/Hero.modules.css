@@ -68,21 +68,30 @@
 
     .image-container img {
         width: 100%;
-        height: 60vh;
+        height: 45vh;
     }
 
     .hero-title_container {
         width: 100%;
+        top: 45%;
+        left: 50%;
+        transform: translate(-50%, -50%);
     }
-
+    
     .hero-title_container h1 {
         font-size: 38px;
         width: 100%;
+        line-height: 36px;
     }
 
     .hero-title_container h2 {
-        font-size: 20px;
+        font-size: 18px;
         text-align: center;
         width: 100%;
     }
+
+    .hero-title_container a {
+        margin: 0 1rem;
+    }
+
 }
