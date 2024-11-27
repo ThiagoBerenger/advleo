@@ -58,7 +58,7 @@ const Header = () => {
                         <li><Link to="/atraso-de-voo" onClick={handleMenuClick}><FaRegClock /> Atraso de Voo</Link></li>
                         <li><Link to="/cancelamento-de-voo" onClick={handleMenuClick}><FaRegCalendarTimes /> Cancelamento de Voo</Link></li>
                         <li><Link to="/overbooking" onClick={handleMenuClick}><MdAirplanemodeInactive /> Overbooking</Link></li>
-                        <li><Link to="/noticias" onClick={handleMenuClick}><FaPencilAlt /> Notícias</Link></li>
+                        <li><a href="https://advleo.com.br/noticias/" onClick={handleMenuClick}><FaPencilAlt /> Notícias</a></li>
                         <li><Link to="https://wa.me/message/3P6PG2A2X6SSO1" onClick={handleMenuClick} target='blank'><MdEmail /> Contato</Link></li>
                         
                         <li><a href="https://www.instagram.com/adv.leonardoborges/profilecard/?igsh=NnRwaGcxeGkxOWRr" target='blank' onClick={handleMenuClick}> <FaInstagram /></a></li>
